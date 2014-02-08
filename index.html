@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Terms & Conditions Generator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template --
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Terms & Conditions Generator</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container" id="body">
+    	<div class="row">
+
+        <!-- Control Panel -->
+        <div class="col-md-4" id="control-panel">
+
+            <form role="form">
+              <div class="form-group">
+                <h3>Company Name</h3>
+                <input type="email" class="form-control" id="company-name" placeholder="Enter Company Name">
+              </div>
+
+              <div class="form-group">
+                <h3>Document</h3>
+                <select class="form-control" id="document">
+                  <option name="terms-conditions">Terms & Conditions</option>
+                  <option name="privacy">Privacy</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <h3>Output Type</h3>
+                <select class="form-control" id="output-type">
+                  <option name="code">Code</option>
+                  <option name="text">Text</option>
+                </select>
+              </div>
+
+              <button type="submit" id="generate" class="btn btn-default">Generate</button>
+            </form>
+        </div>
+
+         <!-- Main Area -->
+        <div class="col-md-8" id="output">
+            <h3 id="title"></h3>
+            <div id="content"></div>
+        </div>
+
+    	</div><!-- Row -->
+    </div><!-- container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
